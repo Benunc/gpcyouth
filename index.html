@@ -272,8 +272,16 @@
     </section>
 
     <footer>
-      Grace 101 at Greenwood Presbyterian Church. Handouts and schedule may be updated; check back or contact the church for the latest.
+      Grace 101 at Greenwood Presbyterian Church. Handouts and schedule may be updated; check back or <span id="contact-link"></span> for the latest.
     </footer>
   </div>
+  <script>
+    (function() {
+      var c = [98,101,110,64,98,101,110,97,110,100,106,97,99,113,46,99,111,109];
+      var e = String.fromCharCode.apply(null, c);
+      var a = document.getElementById('contact-link');
+      a.innerHTML = '<a href="' + 'mailto:' + e + '">contact ' + e.replace('@', ' (at) ') + '</a>';
+    })();
+  </script>
 </body>
 </html>
