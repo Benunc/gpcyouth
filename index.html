@@ -105,6 +105,25 @@
     .handouts-cta:hover {
       background: #234012;
     }
+    .recordings-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .recordings-list li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.35rem 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .recordings-list li:last-child { border-bottom: none; }
+    .recordings-list .rec-date { color: var(--muted); font-size: 0.9rem; }
+    .recordings-list .rec-title { flex: 1; min-width: 0; }
+    .recordings-list .rec-link a { font-weight: 600; color: var(--accent); }
+    .recordings-list .rec-link a:hover { text-decoration: underline; }
+    .recordings-list .rec-none { color: var(--muted); font-size: 0.9rem; }
     .schedule-table-wrap {
       overflow-x: auto;
       margin: 1rem 0;
@@ -182,6 +201,18 @@
     </section>
 
     <section>
+      <h2>Recordings</h2>
+      <p style="margin: 0 0 1rem 0; color: var(--muted); font-size: 0.95rem;">Lesson audio (MP3) — links added as recordings are available.</p>
+      <ul class="recordings-list">
+        <li>
+          <span class="rec-date">Feb 15</span>
+          <span class="rec-title">Lesson 2 — Grace and Sin</span>
+          <span class="rec-link"><a href="https://drive.google.com/file/d/1bdarYZ7HA46FAjf5bnAc0HowuwNKceni/view?usp=sharing" target="_blank" rel="noopener noreferrer">Listen (MP3)</a></span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Schedule</h2>
       <div class="schedule-table-wrap">
         <table class="schedule-table" aria-label="Grace 101 schedule">
@@ -196,50 +227,50 @@
           <tbody>
             <tr>
               <td class="date">Feb 8</td>
-              <td class="lesson">1 &amp; 2</td>
-              <td>What is Grace? / Grace and Sin</td>
+              <td class="lesson">1</td>
+              <td>What is Grace?</td>
               <td class="teacher">Ben</td>
             </tr>
             <tr>
               <td class="date">Feb 15</td>
-              <td class="lesson">3 &amp; 4</td>
-              <td>Common Grace vs Special Grace / The Facets of Grace</td>
+              <td class="lesson">2</td>
+              <td>Grace and Sin</td>
               <td class="teacher">Ben</td>
             </tr>
             <tr class="teacher-duane">
               <td class="date">Feb 22</td>
-              <td class="lesson">5</td>
-              <td>Priority of Grace, Pt 1</td>
+              <td class="lesson">3</td>
+              <td>Common Grace vs Special Grace</td>
               <td class="teacher">Duane</td>
             </tr>
             <tr>
               <td class="date">Mar 1</td>
-              <td class="lesson">6</td>
-              <td>The Priority of Grace, Pt 2</td>
+              <td class="lesson">4</td>
+              <td>The Facets of Grace</td>
               <td class="teacher">Ben</td>
             </tr>
             <tr>
               <td class="date">Mar 8</td>
-              <td class="lesson">7</td>
-              <td>The Incongruity of Grace</td>
+              <td class="lesson">5</td>
+              <td>Priority of Grace, Pt 1</td>
               <td class="teacher">Ben</td>
             </tr>
             <tr>
               <td class="date">Mar 15</td>
-              <td class="lesson">8</td>
-              <td>Good Works</td>
+              <td class="lesson">6 &amp; 7</td>
+              <td>The Priority of Grace, Pt 2 / The Incongruity of Grace</td>
               <td class="teacher">Ben</td>
             </tr>
             <tr>
               <td class="date">Mar 22</td>
-              <td class="lesson">9</td>
-              <td>Distortion #1: Legalism</td>
+              <td class="lesson">8</td>
+              <td>Good Works</td>
               <td class="teacher">Ben</td>
             </tr>
             <tr class="teacher-duane">
               <td class="date">Mar 29</td>
-              <td class="lesson">10</td>
-              <td>Remedy #1: Grace as Gift</td>
+              <td class="lesson">9 &amp; 10</td>
+              <td>Distortion #1: Legalism / Remedy #1: Grace as Gift</td>
               <td class="teacher">Duane</td>
             </tr>
             <tr>
